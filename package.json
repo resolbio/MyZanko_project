@@ -1,0 +1,20 @@
+{
+  "name": "myzanko_project",
+  "version": "1.0.0",
+  "description": "MyZanko Project is an educational web and application-based system focused on helping students.",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server/index.js",
+    "start": "node src/server/index.js",
+    "build": "node scripts/build.mjs",
+    "lint": "node --check src/server/*.js src/client/*.js src/shared/*.js tests/*.js scripts/*.mjs",
+    "test": "node --test"
+  },
+  "keywords": [
+    "education",
+    "web",
+    "starter"
+  ],
+  "author": "",
+  "license": "ISC"
+}

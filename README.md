@@ -2,20 +2,35 @@
 
 MyZanko Project is an educational web and application-based system focused on helping students.
 
-## Recommended project architecture
-
-For maintainability and growth, the project follows this structure:
+## Project architecture
 
 ```text
 MyZanko_project/
-├─ public/
+├─ public/                # Static assets and base HTML
 ├─ src/
-│  ├─ client/
-│  ├─ server/
-│  └─ shared/
-├─ tests/
-├─ docs/
-└─ README.md
+│  ├─ client/             # Frontend browser code
+│  ├─ server/             # Backend/API code
+│  └─ shared/             # Shared constants and helpers
+├─ tests/                 # Node test files
+├─ docs/                  # Documentation
+├─ scripts/               # Build/automation scripts
+└─ package.json           # Project scripts and metadata
 ```
 
-See `/docs/ARCHITECTURE.md` for details and conventions.
+See `/docs/ARCHITECTURE.md` for structure conventions.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Available commands
+
+- `npm run dev` — start local server
+- `npm run build` — generate `dist/` output
+- `npm run lint` — syntax check project JavaScript files
+- `npm test` — run focused Node tests
